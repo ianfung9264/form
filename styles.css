@@ -1,0 +1,164 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-style: italic;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    display:flex;
+    height: 100%;
+    width: 100%;
+
+}
+
+/* 
+.leftSideContainer, .rightSideContainer{
+    display:inline-block;
+    height:100%;
+    width:100%;
+    background-color: grey;
+} */
+
+.leftSideContainer {
+    background-color: rgb(6, 170, 94);
+    height:100%;
+    Width:35%;
+    background-image: url('signUp.svg');
+    background-size: cover; /* makes sure the image covers the full container */
+    background-position: center; /* centers the image */
+    background-repeat: no-repeat; 
+}
+
+.rightSideContainer {
+    background-color: #1d2b3a;
+    height:100%;
+    Width:65%;
+    display:flex;
+    flex-direction:column;
+}
+
+
+.rightSideTopContainer,
+.rightSideMiddleContainer,
+.rightSideBottomContainer {
+    flex: 1;  /* Added this */
+    width:100%;
+}
+
+
+.rightSideTopContainer {
+    height:33.333%;
+    width:100%;
+}
+.rightSideMiddleContainer{
+    height:33.333%;
+    width:100%;
+}
+
+.rightSideBottomContainer {
+    height:33.333%;
+    width:100%;
+}
+
+.shortDescription {
+    color:rgb(200, 200, 200);
+    padding-left:5%;
+    padding-top :100px;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-style: italic;
+}
+.shortDescription2{
+    color:rgb(200, 200, 200);
+    padding-left:5%;
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-style: italic;
+}
+
+.input-group label{
+    display:block;
+    color:rgb(200, 200, 200);
+
+}
+
+.input-pair{
+    display:flex;
+    justify-content: space-around;
+}
+.input-group input {
+    width: 250px;  /* Adjust this value as needed */
+    padding: 10px; /* You can also adjust padding for better visual appeal */
+    border: 1px solid #ccc; /* A basic border, you can customize this */
+    border-radius: 4px; /* Optional: rounded corners for the input */
+}
+
+.rightSideBottomContainer p{
+
+    color:rgb(200, 200, 200);
+}
+/* .formcontainer{
+   font-size: 25px;
+   display:flex;
+   flex-direction:row;
+   flex-wrap:wrap;
+   gap:100px;
+} */
+/* 
+
+.leftSideContainer {
+    flex-basis: 28%;
+    background-color: black;
+}
+
+.rightSideContainer {
+    flex-grow: 1;
+    background-color: red;
+}
+
+.rightSideTopContainer {
+    flex-basis: 50%;
+    background-color: greenyellow;
+}
+
+.rightSideMiddleContainer {
+    flex-basis: 50%;
+    background-color: green;
+}
+
+.rightSideBottomContainer {
+    flex-basis: 50%;
+    background-color: grey;
+}  */
+
+#createAccountBtn{
+    margin-left:60px;
+    margin-top:60px;
+    display: inline-block;
+    padding: 15px 48px;
+    background-color: rgb(6, 170, 94); /* Blue color */
+    color: #ffffff; /* White text color */
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    font-weight:bold;
+}
+#createAccountBtn:hover{
+    background-color: #405043;
+}
+
+#logIn{
+    margin-left:60px;
+    margin-top:20px;
+    font-size: 20px;
+}
+
